@@ -1,3 +1,272 @@
-<% var title = page.title || ''; if (is_archive()) { title = __('archive_title'); if (is_month()) { title += ': ' + page.year + '/' + page.month; } else if (is_year()) { title += ': ' + page.year; } } else if (is_category()) { title = __('category_title') + ': ' + page.category; } else if (is_tag()) { title = __('tag_title') + ': ' + page.tag; } description = ''; if (is_home()) { title = config.title; if (page.current && page.current > 1) { title = 'page ' + page.current + ' | ' + config.title; } } else if (page.current && page.current > 1) { title = 'page ' + page.current + ' | ' + title + ' | ' + config.title; } else if (is_post()) { title = title + ' | ' + config.title; } %> <% if (config.author){ %> <% } %> <% if ( is_home() && config.description){ %> <% } %> <%- open_graph({title: title}) %> <% if (theme.rss){ %> <% } %> <% if (theme.favicon){ %> <% } %> <%- css('css/uno.css') %> <%- css('css/highlight') %> <%- css('css/archive.css') %> <%- css('css/china-social-icon.css') %> <%- partial('_partials/side-panel') %>
-<%- body %> <%- partial('_partials/footer') %> 
-<%- partial('_scripts/mathjax') %> <%- partial('_scripts/awesome-toc') %> <%- partial('_scripts/site-analytics') %> <%- partial('_scripts/github-repo-widget') %> <%- partial('_scripts/killie6') %> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      Floating Rhoda and the Glue Man | 翠西的乌托邦 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="翠西">
+    
+    
+
+    <meta name="description" content="有两种剧本。一种有很扣人心弦的故事，另一种没有。但并非有好故事的就是好剧本，比如好莱坞商业类型片，也并非没有好故事的就不是好剧本了，比如Eve Esler的Floating Rhoda and the Glue Man。
+故事在这个剧本里不是主要人物，这件事从开头的大独白就可以看出。女主Rhoda面对着观众，唠唠叨叨地剧透着Rhoda的人生，专业术语叫这种行为为Exposition，刻意地告知观众">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Floating Rhoda and the Glue Man | 翠西的乌托邦">
+<meta property="og:url" content="http://blog.linyijing.com/2015/Floating Rhoda and the Glue Man/index.html">
+<meta property="og:site_name" content="翠西的乌托邦">
+<meta property="og:description" content="有两种剧本。一种有很扣人心弦的故事，另一种没有。但并非有好故事的就是好剧本，比如好莱坞商业类型片，也并非没有好故事的就不是好剧本了，比如Eve Esler的Floating Rhoda and the Glue Man。
+故事在这个剧本里不是主要人物，这件事从开头的大独白就可以看出。女主Rhoda面对着观众，唠唠叨叨地剧透着Rhoda的人生，专业术语叫这种行为为Exposition，刻意地告知观众">
+<meta property="og:image" content="https://farm2.staticflickr.com/1612/24854568169_369203e8aa.jpg">
+<meta property="og:updated_time" content="2016-02-23T23:23:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Floating Rhoda and the Glue Man | 翠西的乌托邦">
+<meta name="twitter:description" content="有两种剧本。一种有很扣人心弦的故事，另一种没有。但并非有好故事的就是好剧本，比如好莱坞商业类型片，也并非没有好故事的就不是好剧本了，比如Eve Esler的Floating Rhoda and the Glue Man。
+故事在这个剧本里不是主要人物，这件事从开头的大独白就可以看出。女主Rhoda面对着观众，唠唠叨叨地剧透着Rhoda的人生，专业术语叫这种行为为Exposition，刻意地告知观众">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css" type="text/css">
+    <link rel="stylesheet" href="/css/highlight.css" type="text/css">
+    <link rel="stylesheet" href="/css/archive.css" type="text/css">
+    <link rel="stylesheet" href="/css/china-social-icon.css" type="text/css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">翠西的乌托邦</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          戏剧笔记
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">Floating Rhoda and the Glue Man</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2015 Jun 26th" class="post-meta__date date">2015 Jun 26th</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/戏剧/">戏剧</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/1990s/">1990s</a>, <a class="tags-link" href="/tags/EveEnsler/">EveEnsler</a>, <a class="tags-link" href="/tags/女性剧作家/">女性剧作家</a>, <a class="tags-link" href="/tags/性别/">性别</a>, <a class="tags-link" href="/tags/美国/">美国</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>有两种剧本。一种有很扣人心弦的故事，另一种没有。但并非有好故事的就是好剧本，比如好莱坞商业类型片，也并非没有好故事的就不是好剧本了，比如Eve Esler的Floating Rhoda and the Glue Man。</p>
+<p>故事在这个剧本里不是主要人物，这件事从开头的大独白就可以看出。女主Rhoda面对着观众，唠唠叨叨地剧透着Rhoda的人生，专业术语叫这种行为为Exposition，刻意地告知观众Rhoda的故事。<br><a id="more"></a></p>
+<p>在Barn的画展，Barn爱上了Rhoda，而Rhoda逃开了他，约了一个和她闺蜜Terrace、她的炮友Coyote一起的Double date。性感的Storm直接地扑向了Barn，Barn无理由地上了Storm。另一边，Rhoda从一个小组里学到，为了让粗暴的阴茎露出温柔的本性，必须克制欲念，而已经精虫上脑的Coyote是无法理解的，并强奸了Rhoda。之后的Double Date，Barn和Coyote先到了。Coyote谴责Barn太懦弱，不主动进攻女性，“等待”一切降临，而不是像个战士一样战斗。女人们来了之后，他们谈到了Barn母亲被天使翅膀形状的水泥块砸死的事情。Double Date结束后，Terrace跟着Barn来到了他家。Barn打算上她，而Terrace却说她爱的其实是Rhoda。而此时，Coyote感受到了Barn与Rhoda之间的化学反应，他无法接受充满雄性色彩的自己被一个娘炮打败，他打了她，打得鼻青脸肿。Rhoda进了医院，照顾她的医生竟然是Storm，Terrace向Rhoda表达被拒，却被Storm接受了。</p>
+<p>第二幕的开场就是Barn与Rhoda的做爱，Rhoda因为Barn一直抓着她很小的胸部而感到不舒服。她要Barn回答，他到底爱的是Rhoda还是Rhoda的胸部，但Barn怎么回答都让Rhoda无法接受。Terrace与Storm做了爱，两人都如梦初醒一般重新发现了自己。Rhoda生日的晚上，Rhoda和Barn玩了S&amp;M的游戏，但Barn太软弱，完全做不到Rhoda想要的样子。Rhoda表示很不满意。此时Barn内心的魔鬼冒出来，不断地叫Rhoda Bitch并狠狠地上了Rhoda。Rhoda又一次被强暴。而这个时候Coyote来了，他告诉Rhoda他洗心革面，变成了一个温柔的读书人，还把自己的名字改成了Farm。Barn离开，Terrace和Storm来了。Terrace看到这一幕以为Coyote又家暴，狠狠地揍了Coyote一顿。在Barn家，Rhoda告诉了Barn小时候被父亲侵犯的事。最后两人在画廊重新修补了关系。</p>
+<p>看起来都是唧唧歪歪的琐事，实则剧本文字本身也充满了“矫情”的调调，因为它本来就不是一个充满动能的故事，而是人们小心翼翼接近、互相伤害、互相逃离的记录。一切都被放慢、唯美化了，就为了让那个接触的瞬间放得更大。</p>
+<p>剧本最特别的也许是对stand-in角色的运用。所谓stand-in，即如《红玫瑰与白玫瑰》里头，一个角色的影子角色。正式角色与影子角色有时是平等的、可交换的，但在这个剧本里，stand-in的每次出现都代表了灵魂与身体的分离。比如最开始，Barn与Storm在做爱时，Barn的灵魂，即Barn本身的角色，就离开了他的身体，Barn的stand-in就立即跳上床，代替Barn继续耕耘，而Barn则开始与他内心中的Rhoda对话。所谓“灵魂在别处”就被很有趣地表现出来。但在被搬上舞台时，这种设计对节奏的控制就会构成很大的挑战。</p>
+<p>剧本对性别和性的讨论很彻底，一如Eve Esler在她著名的《阴道独白》的风格一样。比如，在性上，不管是剧本里的谁，真正渴望的东西都从来不存在，从来不真实，就像Barn渴望Rhoda的乳房，Rhoda渴望Barn的暴力，都是和个体分离的，都是他们各自缺失的东西，都是他们没有的东西。坦然地接受这件事更加困难。男女之间是多么容易互相吸引，而又因为对自己和对对方的不安全感互相推开。喜欢修补破碎的东西的Barn在结尾告诉Rhoda，继续漂浮吧，不要离开，继续漂浮吧，也好像是对人与人之间连接的渴望。</p>
+<p><a data-flickr-embed="false" href="https://www.flickr.com/photos/139298493@N06/24854568169/in/dateposted-public/" title="floating" target="_blank" rel="external">~<img src="https://farm2.staticflickr.com/1612/24854568169_369203e8aa.jpg" width="500" height="309" alt="floating"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>1998年这出戏在芝加哥Vitalist Theatre上演的时候，虽然Eve Esler坚持认为这个制作是她作品中最好的，但当时这出戏并没有得到很好的评价。戏被人们认为过长、无趣。但难免，这是一出要人情感付出的戏，不是人人都准备好放下防卫的。</p>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'yijinglin'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -1,3 +1,277 @@
-<% var title = page.title || ''; if (is_archive()) { title = __('archive_title'); if (is_month()) { title += ': ' + page.year + '/' + page.month; } else if (is_year()) { title += ': ' + page.year; } } else if (is_category()) { title = __('category_title') + ': ' + page.category; } else if (is_tag()) { title = __('tag_title') + ': ' + page.tag; } description = ''; if (is_home()) { title = config.title; if (page.current && page.current > 1) { title = 'page ' + page.current + ' | ' + config.title; } } else if (page.current && page.current > 1) { title = 'page ' + page.current + ' | ' + title + ' | ' + config.title; } else if (is_post()) { title = title + ' | ' + config.title; } %> <% if (config.author){ %> <% } %> <% if ( is_home() && config.description){ %> <% } %> <%- open_graph({title: title}) %> <% if (theme.rss){ %> <% } %> <% if (theme.favicon){ %> <% } %> <%- css('css/uno.css') %> <%- css('css/highlight') %> <%- css('css/archive.css') %> <%- css('css/china-social-icon.css') %> <%- partial('_partials/side-panel') %>
-<%- body %> <%- partial('_partials/footer') %> 
-<%- partial('_scripts/mathjax') %> <%- partial('_scripts/awesome-toc') %> <%- partial('_scripts/site-analytics') %> <%- partial('_scripts/github-repo-widget') %> <%- partial('_scripts/killie6') %> 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      恋人 Lovers | 翠西的乌托邦 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="翠西">
+    
+    
+
+    <meta name="description" content="这是两个令人心碎的故事。不是爱情故事，是关于爱情的故事。戏剧分成两个独立的独幕剧，第一部分Winners和第二部分Losers，分别讲了一对年轻迷惘的恋人与一对熟透了的年华老去的恋人。似乎2012年百老汇的制作把两者合为一体，但时常有把两个独幕剧分开的制作，曾有一位叫Richard Wargo的艺术家把它拆开并且改编成了歌剧，并重命名为了Ballymore。
+剧本的作家是北爱尔兰的现代剧作家Bri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="恋人 Lovers | 翠西的乌托邦">
+<meta property="og:url" content="http://blog.linyijing.com/2015/恋人 Lovers/index.html">
+<meta property="og:site_name" content="翠西的乌托邦">
+<meta property="og:description" content="这是两个令人心碎的故事。不是爱情故事，是关于爱情的故事。戏剧分成两个独立的独幕剧，第一部分Winners和第二部分Losers，分别讲了一对年轻迷惘的恋人与一对熟透了的年华老去的恋人。似乎2012年百老汇的制作把两者合为一体，但时常有把两个独幕剧分开的制作，曾有一位叫Richard Wargo的艺术家把它拆开并且改编成了歌剧，并重命名为了Ballymore。
+剧本的作家是北爱尔兰的现代剧作家Bri">
+<meta property="og:image" content="https://farm2.staticflickr.com/1637/25195977866_834ed9f75d.jpg">
+<meta property="og:updated_time" content="2016-02-23T22:40:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="恋人 Lovers | 翠西的乌托邦">
+<meta name="twitter:description" content="这是两个令人心碎的故事。不是爱情故事，是关于爱情的故事。戏剧分成两个独立的独幕剧，第一部分Winners和第二部分Losers，分别讲了一对年轻迷惘的恋人与一对熟透了的年华老去的恋人。似乎2012年百老汇的制作把两者合为一体，但时常有把两个独幕剧分开的制作，曾有一位叫Richard Wargo的艺术家把它拆开并且改编成了歌剧，并重命名为了Ballymore。
+剧本的作家是北爱尔兰的现代剧作家Bri">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css" type="text/css">
+    <link rel="stylesheet" href="/css/highlight.css" type="text/css">
+    <link rel="stylesheet" href="/css/archive.css" type="text/css">
+    <link rel="stylesheet" href="/css/china-social-icon.css" type="text/css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">翠西的乌托邦</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          戏剧笔记
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">恋人 Lovers</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2015 Jun 12th" class="post-meta__date date">2015 Jun 12th</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/戏剧/">戏剧</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/1980s/">1980s</a>, <a class="tags-link" href="/tags/BrianFriel/">BrianFriel</a>, <a class="tags-link" href="/tags/剧本/">剧本</a>, <a class="tags-link" href="/tags/北爱尔兰/">北爱尔兰</a>, <a class="tags-link" href="/tags/英文/">英文</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>这是两个令人心碎的故事。不是爱情故事，是关于爱情的故事。戏剧分成两个独立的独幕剧，第一部分Winners和第二部分Losers，分别讲了一对年轻迷惘的恋人与一对熟透了的年华老去的恋人。似乎2012年百老汇的制作把两者合为一体，但时常有把两个独幕剧分开的制作，曾有一位叫Richard Wargo的艺术家把它拆开并且改编成了歌剧，并重命名为了Ballymore。</p>
+<p>剧本的作家是北爱尔兰的现代剧作家Brian Friel，一个生于1929年，被戏剧世界称为如今在世的最伟大的英文剧作家之一。最有名的作品可能是1990的Dancing at Lughnasa，拿下了托尼和奥利弗的许多奖项。这部写于1967的Lovers反而并不是他的什么代表作，但力道很足。通篇读下来之后，感觉这是两部结构极有现代色彩的作品，短小精悍，小小的篇幅挤满了张力。<br><a id="more"></a></p>
+<h4 id="Winners"><a href="#Winners" class="headerlink" title="Winners"></a>Winners</h4><p>一开篇的叙述很容易就让人想到Thornton Wilder的Our Town。舞台上左右分别站了一个男人和一个女人，坐着，毫无情感地念着台词，机械地描述着这个小镇、这对小情人和他们各自的家庭。他们当然还汇报了此时此刻的天气、水位等等一系列不相干的指数。用很干瘪的笔法大概地描了一个样子出来，让人觉得舞台上发生的事情是一个大的现实中的一部分。</p>
+<p>故事的主角Mag和Joe是一对稚气未脱的学生恋人。Mag意外怀了孕，两人被迫面临婚姻。</p>
+<p>Friel铺了许多有意思的黑暗细节。</p>
+<p>两人憧憬的未来婚房，对面竟然是屠宰场。他们一边安慰着自己，一边以此互相逗乐，嘲笑屠宰场的血腥和粗鲁。唧唧歪歪的女主Mag在她的半自言自语中，还提到另外一件恐怖的事。女老师Dorothy Quilty在看电影时，被邻座的人在手臂上打了一针，然后就被一个犯罪团伙架出了影院。四天后，Dorothy被发现。她躲在一棵西卡莫树上，赤裸着身体。自那以后，她就辞了职，再也没有教过书。Mag和Joe父母也并没有很完美的生活。Mag还有一个夭折的哥哥，她的母亲因此整天精神不稳定……小的碎片撑起并崩塌了整个故事。</p>
+<p>最有意思的应该是这个部分里故事情节的压迫感。当Mag和Joe一来一回地耍脾气时，面无表情的一男一女却已经曝光了结局。根据他们俩的说法，湖边某钓鱼的小镇镇民丢了他的船，岸边只留着一个女式自行车。而在几日之后，这艘船在一个小岛附近被发现了，这艘自行车被确定是Mag的。之后，人们发现了河里的尸体。与此同时，Mag和Joe还在对未来充满希望地讨论着、憧憬着。两个甜蜜的灵魂还对对方说，我很享受我们的爱情，我总觉得我的爸妈不知道爱情是什么，但我们知道。Joe放弃了他向往的学校和教育。两个人最后牵着手跑向湖边，即这一幕的结束。</p>
+<h4 id="Losers"><a href="#Losers" class="headerlink" title="Losers"></a>Losers</h4><p>第二部分跟第一部分在情节上毫无关联，主角是一个中年男人Andy。他取了Hanna，而因为Hanna必须照顾卧病在床的母亲，留下来做了倒插门女婿。极度虔诚的天主教教徒母亲每天都要频繁地使唤女儿，为了不让女儿与女婿暧昧地独处，每每Andy和Hanna在他们的客厅企图有所行动，母亲就要拉铃，要求大家马上来她的卧室，对着Saint Philomena的塑像做祷告。</p>
+<p>为了能够有些欢愉的时间，Andy和Hanna想出了一个奇怪的办法。当他们想要亲密时，Andy就会立即吟诵一首他背得滚瓜烂熟的长诗，让母亲打消疑虑，假装他们在进行正常的对话。但无论如何，母亲和母亲所代表的宗教压制着他们。Winners里的年轻人因为性而被迫在一起，而这里，两人即便到了中年，欲火仍一点不减，仍有着强烈的性压抑。</p>
+<p>母亲是个很令人讶异的形象。在一开始的描述中，很容易想象一个烦人自私的老太婆，而当她出现时，看到的却是一个温文尔雅、井井有条、洁净、柔弱的老太太。她的语气中透着仪式感和强烈的宗教色彩。她的房间里充满了女性安详的氛围。<br>Andy则是一个典型的局外人。他是角色中唯一的男性。他粗鲁、讨厌这个家，以至于他在知道Saint Philomena被确认是个虚假的形象时，喝得酩酊大醉，回来之后抱着Saint Philomena的神像跳舞，一边疯狂地吟诵着他做爱时才会吟诵的诗歌。他猥亵了母亲的神像。</p>
+<p>在那之后，所有人都偏离了轨道，所有人的关系卡在了一个不应该在的地方。</p>
+<p><a data-flickr-embed="false" href="https://www.flickr.com/photos/139298493@N06/25195977866/in/dateposted-public/" title="lovers" target="_blank" rel="external"><img src="https://farm2.staticflickr.com/1637/25195977866_834ed9f75d.jpg" width="500" height="309" alt="lovers"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script></p>
+<p>我想我欣赏这出戏剧的原因，还是Friel讲故事技巧的精巧，和他对反差、惊喜、重复、信号、象征的把握。但我把这个剧本理解为Friel发散创造力的习作，里面有许多作为编剧任性的部分，比如忽快忽慢的节奏、超长的独白等等。这都是有意思的部分，但并不一定是人人都能导好的作品。需要很强的功力才能控制好这部戏的节奏。2012年百老汇的版本似乎就在节奏上出了一些问题，从下面这篇戏评看来，这个版本过于拖沓、冗长，并没有得到很高的评价。</p>
+<p><a href="http://www.nytimes.com/2012/10/01/theater/reviews/lovers-by-brian-friel-at-the-beckett-theater.html?_r=1" title="Lovers NYTimes" target="_blank" rel="external">NYTimes 2012年 Lovers Review</a></p>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'yijinglin'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
