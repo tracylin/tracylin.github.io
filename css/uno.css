@@ -993,7 +993,7 @@ em {
 blockquote {
 font-family: Georgia, serif,"微软雅黑", 
              STXihei, "华文细黑";
-font-size: 1.12em;
+font-size: 1.2em;
 font-style: italic;
 width: 500px;
 margin: 0.25em 0;
@@ -1006,7 +1006,7 @@ color: #383838;
 blockquote:before {
 display: block;
 content: "\201C";
-font-size: 80px;
+font-size: 2.2em;
 position: absolute;
 left: -20px;
 top: -20px;
@@ -1015,7 +1015,7 @@ color: #7a7a7a;
 
 blockquote cite {
 color: #999999;
-font-size: 14px;
+font-size: 1.1em;
 display: block;
 margin-top: 5px;
 }
