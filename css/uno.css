@@ -938,9 +938,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #f68811; }
+  color: #f99f3e; }
   a:hover {
-    color: #fe5216;
+    color: #ffc704;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -968,26 +968,46 @@ h1 {
   letter-spacing: .05em; }
 
 h2 {
-  font-size: 2.2em; }
+  margin-top: 1.5em;
+  font-size: 2.2em; 
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #f99f3e;}
 
 h3 {
-  font-size: 1.8em; }
+  margin-top: 1.5em;
+  font-size: 1.8em; 
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  font-family:  Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-weight: bold;
+  color: #f99f3e; }
 
 h4 {
-  font-size: 1.4em; }
+  margin-top: 1.5em;
+  font-size: 1.4em; 
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #f99f3e; }
 
 h4 {
-  font-size: 1.2em; }
+  margin-top: 1.5em;
+  font-size: 1.2em; 
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  color: #f99f3e; }
 
 h5 {
   font-size: 1em; }
 
 p {
-  margin-bottom: 1.3em;
+  margin-bottom: 1.5em;
   line-height: 1.7em; }
 
 strong {
-  font-weight: bold; }
+  font-weight: bold; 
+  color: #575552;}
 
 em {
   font-style: italic; }
@@ -1002,7 +1022,7 @@ margin: 0.25em 0;
 padding: 0.25em 40px;
 line-height: 1.45;
 position: relative;
-color: #383838;
+color: #595858;
 }
 
 blockquote:before {
@@ -1012,11 +1032,11 @@ font-size: 5em;
 position: absolute;
 left: -20px;
 top: -20px;
-color: #7a7a7a;
+color: #f99f3e;
 }
 
 blockquote cite {
-color: #999999;
+color: #b4afaa;
 font-size: 0.83em;
 display: block;
 margin-top: 5px;
@@ -1061,12 +1081,12 @@ code {
   .time a,
   .author a,
   .tags a {
-    color: #f68811; }
+    color: #f99f3e; }
     .date a:hover,
     .time a:hover,
     .author a:hover,
     .tags a:hover {
-      color: #006699; }
+      color: #ffc704; }
 
 .excerpt {
   margin: 0;
@@ -1455,7 +1475,7 @@ i {
   .post-list__post-title a {
     color: #333333; }
     .post-list__post-title a:hover {
-      color: #f68811; }
+      color: #f99f3e; }
 
 .post-list__meta {
   display: block;
