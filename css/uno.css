@@ -991,19 +991,38 @@ em {
   font-style: italic; }
 
 blockquote {
-  margin: 1em 0;
-  padding: 1em 0;
-  background: #f8f8f8;
-  border: 1px solid #eeeeee;
-  border-radius: 3px;
-  /*font-family: "Roboto Slab", serif;*/
-  font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 1.0em;
-  /*text-align: center;*/ }
-  blockquote p:last-child {
-    margin-bottom: 0; }
+font-family: Georgia, serif,"微软雅黑", 
+             STXihei, "华文细黑";
+font-size: 18px;
+font-style: italic;
+width: 500px;
+margin: 0.25em 0;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
 
 ol, ul {
   margin: 0 0 1.3em 2.5em; }
@@ -1204,6 +1223,7 @@ hr {
   max-width: 430px; }
 
 .panel-cover--overlay {
+  opacity: 0.8;
   display: block;
   position: absolute;
   z-index: 0;
