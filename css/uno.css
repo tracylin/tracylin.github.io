@@ -925,7 +925,8 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family:  "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-size: 1em;
   color: #666666; }
 
@@ -937,9 +938,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #006699; }
+  color: #f68811; }
   a:hover {
-    color: green;
+    color: #fe5216;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -954,7 +955,8 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family: "Raleway",Verdana,sans-serif,宋体, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-weight: lighter;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
@@ -995,7 +997,7 @@ font-family: Georgia, serif,"微软雅黑",
              STXihei, "华文细黑";
 font-size: 1.2em;
 font-style: italic;
-width: 500px;
+width: 28em;
 margin: 0.25em 0;
 padding: 0.25em 40px;
 line-height: 1.45;
@@ -1006,7 +1008,7 @@ color: #383838;
 blockquote:before {
 display: block;
 content: "\201C";
-font-size: 2.2em;
+font-size: 5em;
 position: absolute;
 left: -20px;
 top: -20px;
@@ -1015,7 +1017,7 @@ color: #7a7a7a;
 
 blockquote cite {
 color: #999999;
-font-size: 1.1em;
+font-size: 0.83em;
 display: block;
 margin-top: 5px;
 }
@@ -1059,7 +1061,7 @@ code {
   .time a,
   .author a,
   .tags a {
-    color: #666666; }
+    color: #f68811; }
     .date a:hover,
     .time a:hover,
     .author a:hover,
