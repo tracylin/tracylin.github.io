@@ -1342,7 +1342,7 @@ hr {
 
 .btn, .navigation__item a {
   padding: 10px 20px;
-  border: 1px solid #006699;
+  border: 1px solid #4da1ff;
   border-radius: 20px;
   font-size: .9em;
   font-weight: bold;
@@ -1377,6 +1377,7 @@ hr {
   font-size: .7em; }
 
 .btn-mobile-menu {
+  opacity: 0.5;
   display: none;
   position: fixed;
   z-index: 9999;
@@ -1385,7 +1386,7 @@ hr {
   left: 0;
   width: 100%;
   height: 42px;
-  background: rgba(13, 71, 77, 0.98);
+  background: rgba(94, 202, 240, 0.98);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center; }
 
@@ -1394,7 +1395,7 @@ hr {
   position: relative;
   top: 3px;
   font-size: 36px;
-  color: #FFF; }
+  color: #82b9cc; }
 
 nav {
   display: inline-block;
