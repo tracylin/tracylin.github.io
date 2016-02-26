@@ -925,16 +925,16 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-  font-family:  Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+font-family: "Raleway", sans-serif;
   font-size: 1em;
+  font-weight: light;
   color: #666666; }
 
 ::selection {
-  background: #fae3df; }
+  background: #dbecf2; }
 
 ::-moz-selection {
-  background: #fae3df; }
+  background: #dbecf2; }
 
 a {
   text-decoration: none;
@@ -965,7 +965,8 @@ h1 {
   margin-top: 0;
   font-size: 3.2em;
   line-height: 1.2em;
-  letter-spacing: .05em; }
+  letter-spacing: .05em;
+  margin-bottom: 1.0em; }
 
 h2 {
   margin-top: 1.5em;
@@ -1062,7 +1063,7 @@ ul {
 code {
   padding: 2px 4px;
   background-color: #f8f8f8;
-  color: #d14;
+  color: #fcb816;
   border: none;
   word-wrap: break-word;
   border-radius: 3px;
@@ -1075,6 +1076,7 @@ code {
 .author,
 .tags {
   font-size: .8em;
+  font-family: "Raleway", sans-serif;
   color: #c7c7c7; }
   .date a,
   .time a,
@@ -1181,6 +1183,9 @@ hr {
   margin-right: .5em; }
 
 .post-meta__tags {
+  margin-left: .4em; }
+  
+.post-meta__category {
   margin-left: .4em; }
 
 .post-meta__author {
@@ -1343,18 +1348,18 @@ hr {
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: none;
-  color: #fe5216;
+  color: #f99f3e;
   -webkit-font-smoothing: antialiased; }
   .btn:hover, .navigation__item a:hover {
-    color: #fe5216;
-    border-color: #fe5216; }
+    color: #f99f3e;
+    border-color: #f99f3e; }
 
 .btn-secondary {
-  border-color: #5ba4e5;
-  color: #5ba4e5; }
+  border-color: #f9bf81;
+  color: #f9bf81; }
   .btn-secondary:hover {
-    color: #217fd2;
-    border-color: #217fd2; }
+    color: #807d7a;
+    border-color: #807d7a; }
 
 .btn-tertiary {
   border-color: #999999;
@@ -1530,7 +1535,7 @@ input[type="tel"] {
   input[type="url"]:focus,
   input[type="search"]:focus,
   input[type="tel"]:focus {
-    border-color: #5ba4e5; }
+    border-color: #f9bf81; }
   input[type="text"]::-webkit-input-placeholder,
   input[type="password"]::-webkit-input-placeholder,
   input[type="datetime"]::-webkit-input-placeholder,
