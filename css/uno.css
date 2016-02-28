@@ -37,6 +37,7 @@ q:before, q:after {
 
 
 body {
+  align:
   width: 100%;
   *zoom: 1; }
   body:before, body:after {
@@ -1076,7 +1077,8 @@ code {
 .author,
 .tags {
   font-size: .8em;
-  font-family: "Raleway", sans-serif;
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   color: #c7c7c7; }
   .date a,
   .time a,
@@ -1092,7 +1094,8 @@ code {
 .excerpt {
   margin: 0;
   font-size: .9em;
-  color: #999999; }
+  color: #999999; 
+  display: inline;}
 
 .intro {
   font-family: "Roboto Slab", serif;
@@ -1152,7 +1155,29 @@ code {
     color: #a6a6a6;
     text-decoration: underline; }
     .footer__copyright a:hover {
-      color: #006699; }
+      color: #f99f3e; }
+      
+.footer__copyright_long {
+  display: block;
+  margin-bottom: 3em; }
+  .footer__copyright a {
+    color: #a6a6a6;
+    text-decoration: underline; }
+    .footer__copyright a:hover {
+      color: #f99f3e; }
+      
+      
+.article-more-link {
+  display: block;
+  margin-top: -0.5em; }
+  .article-more-link a {
+    color: #333333;
+    font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+    font-size:0.9em;
+    border-bottom: 1px dotted #a6a6a6; }
+    .article-more-link a:hover {
+      color: #f99f3e; }
 
 .avatar,
 .logo {
@@ -1172,7 +1197,6 @@ hr {
   display: none !important; }
 
 .post-comments {
-  border-top: 1px solid #dddddd;
   padding: 60px 0; }
 
 .post-meta {
@@ -1400,6 +1424,16 @@ hr {
 nav {
   display: inline-block;
   position: relative; }
+  
+nav-title {
+  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-weight: lighter;
+  margin-top: 1.5em;
+  font-size: 0.9em; 
+  line-height: 1.5em;
+  color: #f99f3e; 
+  display: inline;}
 
 .navigation {
   display: inline-block;
@@ -1435,7 +1469,7 @@ nav {
 
 .pagination {
   display: block;
-  margin: 0 0 4em 0; }
+  margin: 3.5em 0 2em 0; }
 
 .pagination__page-number {
   margin: 0;
@@ -1475,7 +1509,7 @@ i {
   margin-bottom: .2em;
   font-size: 1.8em;
   -webkit-font-smoothing: antialiased;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.3em; }
   .post-list__post-title a {
     color: #333333; }
@@ -1489,7 +1523,7 @@ i {
   color: #c7c7c7; }
 
 .post-list__meta--date {
-  margin-right: .5em;
+  margin-right: 0em;
   color: #c7c7c7; }
 
 .post-list__meta--tags {
