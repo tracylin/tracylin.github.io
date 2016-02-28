@@ -929,8 +929,8 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+    font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif, STXihei, "微软雅黑", 
+             serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-size: 1em;
   font-weight: light;
   color: #666666; }
@@ -1008,8 +1008,8 @@ h5 {
   font-size: 1em; }
 
 p {
-  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细黑", "微软雅黑", 
-             STXihei, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif, STXihei, "微软雅黑", 
+             serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   margin-bottom: 1.0em;
   line-height: 1.5;
   letter-spacing: -0.008em; }
