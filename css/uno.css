@@ -1216,6 +1216,8 @@ hr {
   display: none !important; }
 
 .post-comments {
+font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细黑", "微软雅黑", 
+             STXihei, serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   padding: 60px 0; }
 
 .post-meta {
