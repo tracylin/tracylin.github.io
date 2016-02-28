@@ -1184,7 +1184,8 @@ code {
       
 .article-more-link {
   display: block;
-  margin-top: -0.5em; }
+  margin-top: -0.5em;
+  margin-bottom: 0.5em; }
   .article-more-link a {
     color: #333333;
     font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
