@@ -1187,6 +1187,10 @@ code {
 
 hr {
   border: none; }
+  
+.tagcloud {
+  margin-bottom: 7em;
+}
 
 .section-title__divider {
   width: 30%;
