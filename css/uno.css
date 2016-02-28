@@ -1455,6 +1455,7 @@ nav-title {
 .navigation__item {
   display: inline-block;
   margin: 3px 3px;
+  margin-bottom: 1em;
   line-height: 1em; }
   .navigation__item a {
     display: block;
