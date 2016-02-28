@@ -929,7 +929,8 @@ html {
 
 body {
   /*font-family: "Raleway", sans-serif;*/
-font-family: "Raleway", sans-serif;
+font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-size: 1em;
   font-weight: light;
   color: #666666; }
@@ -970,7 +971,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.2em;
   letter-spacing: .05em;
-  margin-bottom: 1.0em; }
+  margin-bottom: 0.5em; }
 
 h2 {
   margin-top: 1.5em;
@@ -1098,6 +1099,9 @@ code {
       color: #ffc704; }
 
 .excerpt {
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  letter-spacing: -0.008em;
   margin: 0;
   font-size: .9em;
   color: #999999; 
@@ -1516,6 +1520,7 @@ i {
       display: none; }
 
 .post-list__post-title {
+display: inline-block;
   margin-top: 0;
   margin-bottom: .2em;
   font-size: 1.8em;
@@ -1526,6 +1531,49 @@ i {
     color: #333333; }
     .post-list__post-title a:hover {
       color: #f99f3e; }
+      
+.post-list__post-subtitle {
+display: inline-block;
+  margin-top: 0;
+  margin-bottom: .2em;
+  font-size: 1.8em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1.3em; }
+  .post-list__post-subtitle a {
+    color: #333333; }
+    .post-list__post-subtitle a:hover {
+      color: #f99f3e; }
+      
+.post-title {
+display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1.3em; }
+  .post-list__post-title a {
+    color: #333333; }
+    .post-list__post-title a:hover {
+      color: #f99f3e; }
+      
+      
+.post-subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  font-size: 1.8em;
+  color: #3c3c3c;
+  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  letter-spacing: -0.008em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: normal;
+  line-height: 1.3em; }
+  .post-list__post-subtitle a {
+    color: #333333; }
+    .post-list__post-subtitle a:hover {
+      color: #f99f3e; }    
+
 
 .post-list__meta {
   display: block;
