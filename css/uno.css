@@ -1016,7 +1016,8 @@ p {
 
 strong {
   font-weight: bold; 
-  }
+  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
+             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;}
 
 em {
   font-style: italic; }
