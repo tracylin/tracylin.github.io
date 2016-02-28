@@ -919,6 +919,9 @@ body {
 
 html, body {
   height: 100%; }
+  
+html, blockquote {
+  height: 100%; }
 
 html {
   height: 100%;
@@ -1024,6 +1027,9 @@ padding: 0.25em 40px;
 line-height: 1.45;
 position: relative;
 color: #595858;
+align:
+  width: 100%;
+  *zoom: 1; 
 }
 
 blockquote:before {
