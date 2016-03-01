@@ -1461,6 +1461,7 @@ nav-title {
   float: left;
   position: relative;
   margin: 0;
+  margin-bottom: -1.8em;
   list-style-type: none; }
 
 .navigation__item {
