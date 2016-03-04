@@ -1294,7 +1294,7 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
   max-width: 430px; }
 
 .panel-cover--overlay {
-  opacity: 0.2;
+  opacity: 0.45;
   display: block;
   position: absolute;
   z-index: 0;
