@@ -925,7 +925,9 @@ html, blockquote {
 
 html {
   height: 100%;
-  max-height: 100%; }
+  max-height: 100%; 
+  
+  }
 
 body {
   /*font-family: "Raleway", sans-serif;*/
@@ -933,7 +935,10 @@ body {
              serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   font-size: 1em;
   font-weight: light;
-  color: #666666; }
+  color: #666666; 
+    height: 100%;
+  width: 100%;
+  }
 
 ::selection {
   background: #dbecf2; }
@@ -943,9 +948,9 @@ body {
 
 a {
   text-decoration: none;
-  color: #f99f3e; }
+  color: #999933; }
   a:hover {
-    color: #ffc704;
+    color: #d2d449;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -960,8 +965,7 @@ h5 {
   margin-top: .8em;
   margin-bottom: .4em;
   /*font-family: "Roboto Slab", serif;*/
-  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  "Lucida Bright",Georgia,serif,KaiTi,STKaiti;
   font-weight: lighter;
   color: #333333;
   -webkit-font-smoothing: antialiased; }
@@ -985,9 +989,7 @@ h3 {
   font-size: 1.8em; 
   line-height: 1.5em;
   margin-bottom: 0.5em;
-  font-family:  Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
-  font-weight: bold;
+  font-family:  Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,KaiTi, STKaiTi;
   color:; }
 
 h4 {
@@ -995,20 +997,17 @@ h4 {
   font-size: 1.4em; 
   line-height: 1.5em;
   margin-bottom: 0.5em;
-  color: #f99f3e; }
+  color: #999933; }
 
 h4 {
   margin-top: 1.5em;
   font-size: 1.2em; 
   line-height: 1.5em;
   margin-bottom: 0.5em;
-  color: #f99f3e; }
-
-h5 {
-  font-size: 1em; }
+  color: #999933; }
 
 p {
-  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif, STXihei, "微软雅黑", 
+  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif, STXihei, Microsoft YaHei, 
              serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   margin-bottom: 1.0em;
   line-height: 1.5;
@@ -1045,11 +1044,11 @@ font-size: 5em;
 position: absolute;
 left: -20px;
 top: -20px;
-color: #f99f3e;
+color: #ebea92;
 }
 
 blockquote cite {
-color: #b4afaa;
+color: #cccc99;
 font-size: 0.83em;
 display: block;
 margin-top: 5px;
@@ -1096,16 +1095,14 @@ code {
   .time a,
   .author a,
   .tags a {
-    color: #f99f3e; }
+    color: #999966; }
     .date a:hover,
     .time a:hover,
     .author a:hover,
     .tags a:hover {
-      color: #ffc704; }
+      color: #d2d449; }
 
 .excerpt {
-  font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
   letter-spacing: -0.008em;
   margin: 0;
   font-size: .9em;
@@ -1170,7 +1167,7 @@ code {
     color: #a6a6a6;
     text-decoration: underline; }
     .footer__copyright a:hover {
-      color: #f99f3e; }
+      color: #999966; }
       
 .footer__copyright_long {
   display: block;
@@ -1179,20 +1176,19 @@ code {
     color: #a6a6a6;
     text-decoration: underline; }
     .footer__copyright a:hover {
-      color: #f99f3e; }
+      color: #999966; }
       
       
 .article-more-link {
   display: block;
   margin-top: 0em; }
   .article-more-link a {
-    color: #333333;
-    font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+    color: #999966;
+    font-family:  "Lucida Bright",Georgia,serif,STFangsong,Fangsong;
     font-size:0.9em;
     border-bottom: 1px dotted #a6a6a6; }
     .article-more-link a:hover {
-      color: #f99f3e; }
+      color: #669900; }
 
 .avatar,
 .logo {
@@ -1257,6 +1253,7 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
   border-top: 1px solid #dddddd; }
 
 .panel {
+  
   display: table;
   width: 100%;
   height: 100%; }
@@ -1272,7 +1269,6 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
   color: #FFF; }
 
 .panel-subtitle {
-  font-family: "Roboto Slab", serif;
   font-size: 1.2em;
   font-weight: lighter;
   letter-spacing: 3px;
@@ -1393,11 +1389,11 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: none;
-  color: #f99f3e;
+  color: #999966;
   -webkit-font-smoothing: antialiased; }
   .btn:hover, .navigation__item a:hover {
-    color: #f99f3e;
-    border-color: #f99f3e; }
+    color: #d2d449;
+    border-color: #d2d449; }
 
 .btn-secondary {
   border-color: #f9bf81;
@@ -1440,15 +1436,14 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
   position: relative;
   top: 3px;
   font-size: 36px;
-  color: #82b9cc; }
+  color: #d7d772; }
 
 nav {
   display: inline-block;
   position: relative; }
   
 nav-title {
-  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  "Lucida Bright",Georgia,serif,STKaiTi, KaiTi;
   font-weight: lighter;
   margin-top: 1.5em;
   font-size: 0.8em; 
@@ -1474,7 +1469,7 @@ nav-title {
     position: relative;
     border-color: #FFF;
     color: #FFF;
-    opacity: .8; }
+    opacity: .9; }
     .navigation__item a:hover {
       color: #FFF;
       border-color: #FFF;
@@ -1538,7 +1533,7 @@ display: inline-block;
   .post-list__post-title a {
     color: #333333; }
     .post-list__post-title a:hover {
-      color: #f99f3e; }
+      color: #d2d449; }
       
 .post-list__post-subtitle {
 display: inline-block;
@@ -1551,7 +1546,7 @@ display: inline-block;
   .post-list__post-subtitle a {
     color: #333333; }
     .post-list__post-subtitle a:hover {
-      color: #f99f3e; }
+      color: #d2d449; }
       
 .post-title {
 display: inline-block;
@@ -1563,7 +1558,7 @@ display: inline-block;
   .post-list__post-title a {
     color: #333333; }
     .post-list__post-title a:hover {
-      color: #f99f3e; }
+      color: #d2d449; }
       
       
 .post-subtitle {
@@ -1571,22 +1566,20 @@ display: inline-block;
   margin-bottom: 1.5em;
   font-size: 1.8em;
   color: #3c3c3c;
-  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;
+  font-family:  serif,Fangsong,STFangsong;
   letter-spacing: -0.008em;
   -webkit-font-smoothing: antialiased;
-  font-weight: normal;
   line-height: 1.3em; }
   .post-list__post-subtitle a {
     color: #333333; }
     .post-list__post-subtitle a:hover {
-      color: #f99f3e; }    
+      color: #d2d449; }    
 
 
 .post-list__meta {
   display: block;
-  margin: .6em 0 0.2em 0;
-  font-size: .9em;
+  margin: .2em 0 0.2em 0;
+  font-size: 1.1em;
   color: #c7c7c7; }
 
 .post-list__meta--date {
@@ -1594,12 +1587,12 @@ display: inline-block;
   color: #c7c7c7; }
 
 .post-list__meta--tags {
-  margin-left: .5em; }
+  margin-left: .3em; }
 
 .post-list__divider {
   width: 30%;
   margin: 2.2em 0 2.1em 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #e5e5da; }
 
 *:focus {
   outline: none; }
