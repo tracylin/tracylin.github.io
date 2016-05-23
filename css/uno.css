@@ -1008,8 +1008,7 @@ p {
 
 strong {
   font-weight: bold; 
-  font-family:  "Lucida Bright",Georgia,serif,STZhongsong,"微软雅黑", 
-             STXihei, "华文细黑", serif, "Droid Serif", Helvetica Neue, Helvetica, Arial;}
+  font-family: Segoe,"Segoe UI",Optima,sans-serif,KaiTi,STKaiTi; }
 
 em {
   font-style: italic; }
