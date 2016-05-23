@@ -989,8 +989,7 @@ h3 {
   margin-top: 1.5em;
   font-size: 1.8em; 
   line-height: 1.5em;
-  margin-bottom: 0.5em;
-  color:; }
+  margin-bottom: 0.5em;}
 
 h4 {
   margin-top: 1.5em;
@@ -1008,7 +1007,8 @@ p {
 
 strong {
   font-weight: bold; 
-  font-family: Segoe,"Segoe UI",Optima,sans-serif,KaiTi,STKaiTi; }
+  font-family: Segoe,"Segoe UI",Optima,sans-serif,KaiTi,STKaiTi;
+  color: #999933; }
 
 em {
   font-style: italic; }
