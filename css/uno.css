@@ -999,7 +999,7 @@ h4 {
   color: #999933; }
 
 p {
-  font-family: Segoe,Optima,sans-serif, Hei,"Hiragino Sans GB", "Microsoft YaHei",
+  font-family: Calibri,sans-serif, Hei,"Hiragino Sans GB", "Microsoft YaHei",
              "WenQuanYi Micro Hei";
   margin-bottom: 1.0em;
   line-height: 1.6;
@@ -1007,19 +1007,18 @@ p {
 
 strong {
   font-weight: bold; 
-  font-family: Segoe,"Segoe UI",Optima,sans-serif,KaiTi,STKaiTi;
-  color: #999933;
-  font-weight: italic; }
+  font-family: "Book Antiqua",Palatino,Optima,sans-serif,KaiTi,STKaiTi;
+  font-style: oblique; }
 
 em {
   font-style: italic; }
 
 blockquote {
-font-family: Georgia, serif, Fangsong, STFangsong;
-font-size: 1.15em;
+font-size: 1.1em;
 font-style: italic;
 width: 28em;
-margin: 0.25em 0;
+margin-top: 1.2em;
+margin-bottom: 2em;
 padding: 0.25em 3em;
 line-height: 1.45;
 position: relative;
@@ -1040,11 +1039,17 @@ top: -20px;
 color: #ebea92;
 }
 
+blockquote p {
+  font-family: Segoe,Optima,sans-serif,Fangsong, STFangsong;
+  display: inline;
+}
+
 blockquote cite {
+font-family: Segoe,Optima,sans-serif,Fangsong, STFangsong;
 color: #cccc99;
 font-size: 0.83em;
 display: block;
-margin-top: 5px;
+margin-top: 0.5em;
 }
  
 blockquote cite:before {
