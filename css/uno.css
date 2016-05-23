@@ -941,10 +941,10 @@ body {
   }
 
 ::selection {
-  background: #dbecf2; }
+  background: #f3ee6d; }
 
 ::-moz-selection {
-  background: #dbecf2; }
+  background: #f3ee6d; }
 
 a {
   text-decoration: none;
