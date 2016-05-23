@@ -1008,9 +1008,11 @@ p {
 strong {
   font-weight: bold; 
   font-family: "Book Antiqua",Palatino,Optima,sans-serif,KaiTi,STKaiTi;
-  font-style: oblique; }
+}
+
 
 em {
+font-family: "Book Antiqua",Palatino,Optima,sans-serif,KaiTi,STKaiTi;
   font-style: italic; }
 
 blockquote {
