@@ -1008,7 +1008,8 @@ p {
 strong {
   font-weight: bold; 
   font-family: Segoe,"Segoe UI",Optima,sans-serif,KaiTi,STKaiTi;
-  color: #999933; }
+  color: #999933;
+  font-weight: italic; }
 
 em {
   font-style: italic; }
