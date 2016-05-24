@@ -1154,8 +1154,8 @@ code {
 
 .footer {
   display: block;
-  padding: 2em 0 0 0;
-  border-top: 2px solid #dddddd;
+  padding: 0.7em 0 0 0;
+  border-top: 0px solid #dddddd;
   font-size: .7em;
   color: #b3b3b3; }
 
@@ -1217,6 +1217,7 @@ font-family: Candara,Calibri,Segoe,"Segoe UI",Optima,Arial,sans-serif,"华文细
 
 .post-meta {
   margin: 0 0 3em 0;
+  font-size: 1.15em;
   color: #c7c7c7; }
 
 .post-meta__date {
@@ -1445,8 +1446,8 @@ nav-title {
   font-family: Optima,Sans-serif,STKaiTi, KaiTi;
   font-weight: lighter;
   margin-top: 1.5em;
-  font-size: 0.8em; 
-  line-height: 3em;
+  font-size: 0.95em; 
+  line-height: 2.6em;
   color: #c7c7c7; 
   display: inline;}
 
