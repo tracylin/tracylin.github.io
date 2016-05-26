@@ -1160,6 +1160,9 @@ code {
   color: #b3b3b3; }
 
 .footer__copyright {
+  font-family: Calibri,sans-serif, Hei,"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei";
+  font-style: normal;
   display: block;
   margin-bottom: .7em; }
   .footer__copyright a {
@@ -1184,7 +1187,8 @@ code {
   .article-more-link a {
     color: #999966;
     font-family:  "Lucida Bright",Georgia,serif,Fangsong,STFangsong;
-    font-size:0.9em;
+    font-style: normal;
+    font-size: 0.9em;
     border-bottom: 1px dotted #a6a6a6; }
     .article-more-link a:hover {
       color: #d2d449; }
@@ -1487,7 +1491,10 @@ nav-title {
 
 .pagination {
   display: block;
-  margin: 3.5em 0 2em 0; }
+  margin: 3.5em 0 2em 0; 
+  font-family: Calibri,sans-serif, Hei,"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei";
+  font-style: normal;}
 
 .pagination__page-number {
   margin: 0;
