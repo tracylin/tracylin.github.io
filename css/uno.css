@@ -1160,7 +1160,7 @@ code {
   color: #b3b3b3; }
 
 .footer__copyright {
-  font-family: Segoe,Optima,sans-serif,Fangsong, STFangsong;
+  font-family: Segoe,Optima,sans-serif,KaiTi, STKaiti;
   font-style: normal;
   display: block;
   margin-bottom: .7em; }
@@ -1491,7 +1491,8 @@ nav-title {
 .pagination {
   display: block;
   margin: 3.5em 0 2em 0; 
-  font-family: Segoe,Optima,sans-serif,Fangsong, STFangsong;
+  font-family: Segoe,Optima,sans-serif, Hei,"Hiragino Sans GB", "Microsoft YaHei",
+             "WenQuanYi Micro Hei";
   font-style: normal;}
 
 .pagination__page-number {
